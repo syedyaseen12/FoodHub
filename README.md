@@ -130,12 +130,9 @@ npx react-native run-android
 ## UI Preview
 
 ### Home Screen
-![Home Screen](./screenshots/Home.png)
+![Home Screen](./screenshots/home.png)
+![Menu Screen](./screenshots/menu.png)
+![Cart Screen](./screenshots/cart.png)
 
-### Restaurant Menu
-![Menu Screen](./screenshots/Menu.png)
-
-### Cart Screen
-![Cart Screen](./screenshots/Cart.png)
 
 
