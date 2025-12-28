@@ -1,4 +1,4 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+<!-- This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
 
 # Getting Started
 
@@ -16,7 +16,7 @@ npm start
 
 # OR using Yarn
 yarn start
-```
+
 
 ## Step 2: Build and run your app
 
@@ -24,13 +24,12 @@ With Metro running, open a new terminal window/pane from the root of your React 
 
 ### Android
 
-```sh
+sh
 # Using npm
 npm run android
 
 # OR using Yarn
 yarn android
-```
 
 ### iOS
 
@@ -95,4 +94,48 @@ To learn more about React Native, take a look at the following resources:
 - [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
 - [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
 - [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-# FoodHub
+# FoodHub -->
+
+# Mini Food Delivery App
+
+A small food delivery app built using React Native with a mock REST API.
+
+## Setup
+
+# Step 1
+1. Clone the repository
+2. Install dependencies
+   npm install
+
+# Step 2 
+
+1.Start mock API
+  cd mock-api
+  json-server --watch db.json --port 3000
+
+# Step 3
+
+npx react-native run-ios
+  # or
+npx react-native run-android
+
+
+## Architecture Decisions
+
+- React Native is used for UI rendering and navigation
+- TanStack Query handles server state like restaurant and menu data
+- Zustand is used for global client state such as cart items
+- API logic is separated from UI components to keep components clean
+
+## UI Preview
+
+### Home Screen
+![Home Screen](./screenshots/Home.png)
+
+### Restaurant Menu
+![Menu Screen](./screenshots/Menu.png)
+
+### Cart Screen
+![Cart Screen](./screenshots/Cart.png)
+
+
